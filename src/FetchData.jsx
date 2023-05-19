@@ -18,7 +18,7 @@ const FetchData = () =>{
     return (
         <main>
             <div className="header">
-                    <span>Current Universities</span>
+                    <span>SEARCH PANEL</span>
                     <div className="subHeader">
                         <input type="text" placeholder="Type any country..." />
                         <button>Search...</button>
