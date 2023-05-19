@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #e5e6e5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  background-color: #dadcda;
+  width: 100vw;
+  height: 6rem;
+  padding: 5px 10px;
+}
+span {
+  font-size: 35px;
+  color: #3c3f3b;
+  font-weight: 800;
+  /* margin-left: 2rem; */
+}
+.subHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.subHeader input {
+  padding: 9px 50px;
+  outline: green;
+  border: none;
+  border-radius: 5px;
+}
+.subHeader button {
+  padding: 5px 30px;
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  /* width: 100%; */
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(100, auto);
+  gap: 30px;
+  width: 80%;
+  margin: 20px auto;
+}
+.contain {
+  padding: 1px 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow-x: scroll;
+}
