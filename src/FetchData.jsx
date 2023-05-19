@@ -39,6 +39,7 @@ const FetchData = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="container">
         {records.map((item, index) => (
           <div key={index} className="contain">
@@ -50,6 +51,26 @@ const FetchData = () => {
       </div>
     </main>
   );
+=======
+    return (
+        <main>
+            <div className="header">
+                    <span>SEARCH PANEL</span>
+                    <div className="subHeader">
+                        <input type="text" placeholder="Type any country..." />
+                        <button>Search...</button>
+                    </div>
+            </div>
+            
+                <div className="container">
+                    {records.map((item,index) =>(
+                        <div key = {index} className="contain"><p >Name:{item.name} </p> <p>web_page:{item.web_pages}</p> <p>country: {item.country}</p></div>
+                    ))}
+            </div>
+
+        </main>
+    )    
+>>>>>>> 1f8e222dffcc708fd4ae8c565ec28cc84710c51c
 };
 
 export default FetchData;
