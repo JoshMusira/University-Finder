@@ -36,6 +36,7 @@ const FetchData = () => {
             placeholder="Type any country..."
           />
           <button onClick={handleSearch}>Search...</button>
+          <nav>Total Universities : <b> {records.length}</b></nav>
         </div>
       </div>
 
