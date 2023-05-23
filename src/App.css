@@ -20,6 +20,15 @@ span {
   font-weight: 800;
   /* margin-left: 2rem; */
 }
+p tag{
+  color: black;
+  font-size: 20px;
+}
+p{
+  color: #3c3f3b;
+
+}
+
 .subHeader {
   display: flex;
   align-items: center;

@@ -8,7 +8,7 @@ const FetchData = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://universities.hipolabs.com/search?country=${searchQuery}`
+          `https://universitiesapi.onrender.com/v1/api/universities/${searchQuery}`
         );
         const data = await response.json();
         setRecords(data);
@@ -24,6 +24,11 @@ const FetchData = () => {
     const input = document.getElementById("searchInput");
     setSearchQuery(input.value);
   };
+  const handleReset = () => {
+    setSearchQuery("");
+    searchInputRef.current.value = "";
+    searchInputRef.current.focus();
+  };
 
   return (
     <main>
@@ -36,6 +41,7 @@ const FetchData = () => {
             placeholder="Type any country..."
           />
           <button onClick={handleSearch}>Search...</button>
+          <button onClick={handleReset}  type="reset">Reset</button>
           <nav>Total Universities : <b> {records.length}</b></nav>
         </div>
       </div>
@@ -43,9 +49,9 @@ const FetchData = () => {
       <div className="container">
         {records.map((item, index) => (
           <div key={index} className="contain">
-            <p>Name: {item.name}</p>
-            <p>Web Page: {item.web_pages}</p>
-            <p>Country: {item.country}</p>
+            <p><tag>Name:</tag> {item.name}</p>
+            <p><tag>Web Page:</tag> {item.web_pages}</p>
+            <p><tag>Country:</tag> {item.country}</p>
           </div>
         ))}
       </div>
